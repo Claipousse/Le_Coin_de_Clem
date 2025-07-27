@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Toggle des classes
             mobileNav.classList.toggle('active');
             burger.classList.toggle('active');
-            
+
             // Animation du body (empêche le scroll quand le menu est ouvert)
             if (mobileNav.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';

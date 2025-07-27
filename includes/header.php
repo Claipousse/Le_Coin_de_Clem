@@ -13,15 +13,15 @@
     <header>
         <nav>
             <ul class="nav-links nav-left">
-                <li><a href="projets.php">Projets</a></li>
-                <li><a href="services.php">Services</a></li>
+                <li><a href="projets.php" <?php echo (isset($current_page) && $current_page === 'projets') ? 'class="active"' : ''; ?>>Projets</a></li>
+                <li><a href="services.php" <?php echo (isset($current_page) && $current_page === 'services') ? 'class="active"' : ''; ?>>Services</a></li>
             </ul>
             
             <a href="index.php" class="logo">Le Coin de Clem</a>
             
             <ul class="nav-links nav-right">
-                <li><a href="ventes.php">Ventes</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="ventes.php" <?php echo (isset($current_page) && $current_page === 'ventes') ? 'class="active"' : ''; ?>>Ventes</a></li>
+                <li><a href="contact.php" <?php echo (isset($current_page) && $current_page === 'contact') ? 'class="active"' : ''; ?>>Contact</a></li>
             </ul>
 
             <div class="burger">
@@ -33,9 +33,9 @@
 
         <!-- Menu mobile séparé -->
         <div class="mobile-nav">
-            <a href="ventes.php">Ventes</a>
-            <a href="services.php">Services</a>
-            <a href="projets.php">Projets</a>
-            <a href="contact.php">Contact</a>
+            <a href="ventes.php" <?php echo (isset($current_page) && $current_page === 'ventes') ? 'class="active"' : ''; ?>>Ventes</a>
+            <a href="services.php" <?php echo (isset($current_page) && $current_page === 'services') ? 'class="active"' : ''; ?>>Services</a>
+            <a href="projets.php" <?php echo (isset($current_page) && $current_page === 'projets') ? 'class="active"' : ''; ?>>Projets</a>
+            <a href="contact.php" <?php echo (isset($current_page) && $current_page === 'contact') ? 'class="active"' : ''; ?>>Contact</a>
         </div>
     </header>
